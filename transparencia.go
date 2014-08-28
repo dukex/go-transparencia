@@ -53,7 +53,6 @@ func (cl *Client) Excelencias(query map[string]string) ([]Excelencia, error) {
 	if err != nil {
 		return nil, err
 	}
-	log.Println(string(data))
 	err = json.Unmarshal(data, &e)
 	if err != nil {
 		return nil, err
